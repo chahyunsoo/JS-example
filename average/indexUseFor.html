@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>평균값 계산기</title>
+    <script>
+        var totalNumbers=Number(prompt('전체 숫자의 갯수를 입력하세요'));
+        var sum=0;
+        for(var i=1; i<=totalNumbers; i++){
+            var value=prompt(i+'번째 숫자를 입력하세요');
+            sum+=Number(value);
+
+        }
+        //평균값을 계산한다
+        var avg=sum/totalNumbers;
+        alert('평균값:'+avg);
+    </script>
+</head>
+<body>
+    
+</body>
