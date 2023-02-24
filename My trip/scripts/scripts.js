@@ -37,6 +37,7 @@ $(function() {
     });
   });
   
+  
   function search(from, to) {
     var url = 'https://javascript-basic.appspot.com/searchLocation';
   
