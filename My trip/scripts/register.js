@@ -75,6 +75,7 @@ $(function() {
     //   return;
     // }
     submit(email, password, gender, birth); 
+    //서버로 폼 전달
 });
   $('#btn-back').click(function() {
     document.location.href = 'index.html';
@@ -93,6 +94,8 @@ function validatePassword(password) {
   var re = /^(?=.{8,})(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$/;
   return re.test(password);
 }
+
+//서버로 폼 전송하기 위해 $.post()함수를 사용
 function submit(email, password, gender, birth) {
   var params = {
     email: email,
